@@ -1,7 +1,6 @@
 "use client";
 
 import { close, logo, menu } from "@/public/assets";
-import { styles } from "@/styles";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -12,9 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const router = useRouter();
   return (
-    <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
-    >
+    <nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <div className="flex items-center">
           <Image
@@ -49,7 +46,7 @@ const Navbar = () => {
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image
-            src={toggle ? close : menu}
+            src={toggle ? menu : close}
             alt="menu"
             height={28}
             width={28}

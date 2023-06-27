@@ -1,6 +1,13 @@
+import Hero from "@/components/Hero";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Nunito } from "next/font/google";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Tech from "@/components/Tech";
+import Works from "@/components/Works";
+import Feedbacks from "@/components/Feedbacks";
+import Contact from "@/components/Contact";
 
 const font = Nunito({ subsets: ["latin"] });
 
@@ -17,7 +24,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+        </div>
         <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>
