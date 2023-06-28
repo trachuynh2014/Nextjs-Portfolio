@@ -1,6 +1,12 @@
 "use client";
-import ComputersCanvas from "./canvas/ComputersCanvas";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
+import { Suspense } from "react";
+import Loader from "./Loader";
+
+const Computers = dynamic(() => import("./canvas/Computers"), {
+  ssr: false,
+});
 
 const Hero = () => {
   return (
@@ -22,7 +28,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <Suspense>
+        <Computers />
+      </Suspense>
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-2xl border-4 border-secondary flex justify-center items-start p-2">

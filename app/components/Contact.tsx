@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import withContainer from "./Container";
 import { motion } from "framer-motion";
 import { slideIn } from "@/utils/motion";
-import EarthCanvas from "./canvas/EarthCanvas";
+import Earth from "./canvas/Earth";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 
@@ -131,7 +131,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <EarthCanvas />
+        <Earth />
       </motion.div>
     </div>
   );
