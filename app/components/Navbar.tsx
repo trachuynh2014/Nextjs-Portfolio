@@ -1,27 +1,20 @@
 "use client";
 
-import { close, logo, menu } from "@/public/assets";
+import { close, menu } from "@/public/assets";
 import Image from "next/image";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { navLinks } from "@/constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const router = useRouter();
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <nav className="paddingX w-full flex items-center py-5 fixed top-0 z-20 bg-primary">
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <div className="flex items-center">
-          <Image
-            onClick={() => router.push("/")}
-            alt="logo"
-            className="cursor-pointer md:block object-contain"
-            height={50}
-            width={50}
-            src={logo}
-          />
+        <div onClick={scrollToTop} className="flex items-center">
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             &nbsp; Finn &nbsp;
             <span className="sm:block hidden">| Fullstack Developer</span>
@@ -30,16 +23,19 @@ const Navbar = () => {
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
+              key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] cursor-pointer font-medium`}
-              key={link.id}
-              onClick={() => {
-                router.push(link.id);
-                setActive(link.title);
-              }}
             >
-              {link.title}
+              <a
+                href={`#${link.id}`}
+                onClick={() => {
+                  setActive(link.title);
+                }}
+              >
+                {link.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -61,17 +57,20 @@ const Navbar = () => {
             <ul className="list-none flex sm:flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
                 <li
+                  key={link.id}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
                   } hover:text-white text-[16px] cursor-pointer font-medium`}
-                  key={link.id}
-                  onClick={() => {
-                    setActive(link.title);
-                    setToggle(!toggle);
-                    router.push(link.id);
-                  }}
                 >
-                  {link.title}
+                  <a
+                    href={`#${link.id}`}
+                    onClick={() => {
+                      setActive(link.title);
+                      setToggle(!toggle);
+                    }}
+                  >
+                    {link.title}
+                  </a>
                 </li>
               ))}
             </ul>

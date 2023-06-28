@@ -5,10 +5,7 @@ import Loader from "../Loader";
 import { OrbitControls, Preload } from "@react-three/drei";
 import dynamic from "next/dynamic";
 
-const Computers = dynamic(() => import("./Computers"), {
-  ssr: false,
-  loading: Loader,
-});
+const Computers = dynamic(() => import("./Computers"), { ssr: false });
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);

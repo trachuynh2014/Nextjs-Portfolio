@@ -13,6 +13,7 @@ interface ExperienceCardProps {
     icon: StaticImageData;
     iconBg: string;
     date: string;
+    url: string;
     points: string[];
   };
 }
@@ -25,12 +26,14 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
+        <div className="flex justify-center items-center w-full h-full cursor-pointer">
           <Image
             src={experience.icon}
             alt={experience.company_name}
             className="object-contain"
-            fill
+            width={50}
+            height={50}
+            onClick={() => window.open(experience.url, "_blank")}
           />
         </div>
       }

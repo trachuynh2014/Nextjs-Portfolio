@@ -1,4 +1,3 @@
-"use client";
 import { useGLTF } from "@react-three/drei";
 import React from "react";
 

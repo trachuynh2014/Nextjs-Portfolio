@@ -5,24 +5,23 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
   nodejs,
   mongodb,
-  git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  spotify,
+  getquorum,
+  socast,
+  vue,
+  postgresql,
+  redis,
+  jwt,
+  circleci,
+  airbnb,
+  moviecrunchers,
 } from "../public/assets";
 
 export const navLinks = [
@@ -46,7 +45,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
@@ -60,14 +59,6 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -97,14 +88,6 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
     name: "figma",
     icon: figma,
   },
@@ -112,67 +95,49 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "Vue JS",
+    icon: vue,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "Json Web Token",
+    icon: jwt,
+  },
+  {
+    name: "circleci",
+    icon: circleci,
+  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Junior Web Developer",
+    company_name: "Socast",
+    icon: socast,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2021 – Aug 2021",
+    url: "https://www.socastdigital.com",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Spearheaded the development of new platform features, contributing to design and architectural decisions that resulted in a 35% increase in user engagement.",
+      "Developed custom WordPress themes, widgets, and shortcodes that reduced page load times by 20% and improved SEO.",
+      "Utilized Jira, Bitbucket, Confluence, and New Relic to manage project workflows and resolve errors, resulting in a 15% increase in productivity and a 10% decrease in bug rates.",
     ],
   },
   {
     title: "Full Stack Web Developer",
     company_name: "GetQuorum",
-    icon: meta,
+    icon: getquorum,
     iconBg: "#383E56",
     date: "Sep 2021 – Aug 2022",
+    url: "https://www.getquorum.com",
     points: [
       "Implemented a new approach for testing the platform's frontend using Cypress, resulting in improved testing efficiency and higher quality code.",
       "Collaborated with a team of 10+ developers to successfully deliver complex projects, resulting in an increase in team productivity by 25% and positive feedback from project stakeholders.",
@@ -180,55 +145,16 @@ const experiences = [
       "Developed a user-friendly and responsive frontend interface for a new industry-changing virtual meeting platform, which improved user engagement by 40% and reduced page load times by 32%.",
     ],
   },
-  {
-    title: "Junior Web Developer",
-    company_name: "Socast",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "June 2021 – Aug 2021",
-    points: [
-      "Spearheaded the development of new platform features, contributing to design and architectural decisions that resulted in a 35% increase in user engagement.",
-      "Developed custom WordPress themes, widgets, and shortcodes that reduced page load times by 20% and improved SEO.",
-      "Utilized Jira, Bitbucket, Confluence, and New Relic to manage project workflows and resolve errors, resulting in a 15% increase in productivity and a 10% decrease in bug rates.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Finn's stays",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, book, and manage property rentals from various providers, providing a convenient and efficient solution for accommodation needs.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
@@ -240,51 +166,51 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: airbnb,
+    source_code_link: "https://finn-stay.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Finn's musics",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An extensive audio streaming service that allows users to access a vast library of music, podcasts, and other audio content, while providing personalized recommendations based on their preferences and listening history.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "PostgreSQL",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: spotify,
+    source_code_link: "https://finn-spotify.vercel.app",
+  },
+  {
+    name: "Finn's movies",
+    description:
+      "The ultimate hub for movie analysis, commentary, and community engagement. With the increasing popularity of streaming services, we recognized the demand for a space where users can review the latest movies they've watched. If you've ever desired to express your thoughts on movies and TV series, look no further.",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: moviecrunchers,
+    source_code_link: "https://raynorelgie.com/MovieCrunchers/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

@@ -105,4 +105,4 @@ const Works = () => {
   );
 };
 
-export default withContainer(Works, "");
+export default withContainer(Works, "work");
