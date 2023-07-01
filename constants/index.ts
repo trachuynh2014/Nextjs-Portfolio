@@ -22,6 +22,7 @@ import {
   circleci,
   airbnb,
   moviecrunchers,
+  colorify,
 } from "../public/assets";
 
 export const navLinks = [
@@ -170,7 +171,7 @@ const projects = [
     source_code_link: "https://finn-stay.vercel.app/",
   },
   {
-    name: "Finn's musics",
+    name: "Finn's music",
     description:
       "An extensive audio streaming service that allows users to access a vast library of music, podcasts, and other audio content, while providing personalized recommendations based on their preferences and listening history.",
     tags: [
@@ -189,6 +190,27 @@ const projects = [
     ],
     image: spotify,
     source_code_link: "https://finn-spotify.vercel.app",
+  },
+  {
+    name: "Colorify",
+    description:
+      "A web application that allows users to discover the color palette of a company's logo by entering the company's name. It provides a simple and intuitive interface where users can view and copy the hexadecimal color codes of the company's logo colors.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OpenAI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "axios",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: colorify,
+    source_code_link: "https://finn-colorify.vercel.app/",
   },
   {
     name: "Finn's movies",

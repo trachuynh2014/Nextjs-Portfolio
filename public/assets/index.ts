@@ -25,6 +25,7 @@ import circleci from "./tech/circleci.png";
 import airbnb from "./airbnb.png";
 import spotify from "./spotify.png";
 import moviecrunchers from "./movie.png";
+import colorify from "./colorify.png";
 
 import getquorum from "./company/getquorum.png";
 import socast from "./company/socast.png";
@@ -54,6 +55,7 @@ export {
   circleci,
   airbnb,
   spotify,
+  colorify,
   moviecrunchers,
   getquorum,
   socast,
