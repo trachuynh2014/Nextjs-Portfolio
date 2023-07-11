@@ -7,7 +7,7 @@ import { navLinks } from "@/constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
