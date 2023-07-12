@@ -14,13 +14,15 @@ export default function Home() {
         <Navbar />
         <Hero />
       </div>
-      <About />
-      <Experience />
-      <Tech />
-      <Works />
-      <div className="relative z-0">
-        <Contact />
-        <Stars />
+      <div className="bg-primary">
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <div className="relative z-0">
+          <Contact />
+          <Stars />
+        </div>
       </div>
     </>
   );
