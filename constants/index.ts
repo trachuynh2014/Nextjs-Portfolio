@@ -112,10 +112,6 @@ const technologies = [
     name: "Json Web Token",
     icon: jwt,
   },
-  {
-    name: "circleci",
-    icon: circleci,
-  },
 ];
 
 const experiences = [
