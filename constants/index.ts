@@ -108,10 +108,6 @@ const technologies = [
     name: "Redis",
     icon: redis,
   },
-  {
-    name: "Json Web Token",
-    icon: jwt,
-  },
 ];
 
 const experiences = [
