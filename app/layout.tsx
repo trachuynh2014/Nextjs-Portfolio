@@ -6,7 +6,7 @@ import ToasterProvider from "./providers/ToasterProvider";
 const font = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Finn | Portfolio",
+  title: "Finn Huynh",
   description: "Finn's personal website",
 };
 
